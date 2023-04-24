@@ -20,5 +20,5 @@ services:
       - autocreate=2
       - worldname=ModdedWorld1
       - difficulty=1
-      - password=passworld
-      - motd="Welcome to hexlo's server! :)"
+      - password=
+      - motd="kys"
