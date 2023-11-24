@@ -61,10 +61,10 @@ RUN export TERRARIA_VERSION=$(get-terraria-version.sh | sed 's/[0-9]/&./g' | sed
 #     && rm tmodloader-server.zip \
 #     && chmod +x ${BASE_PATH}/tModLoaderServer*
 
-## Fixed tModLoader Version: v0.11.8.9 (last 1.3 version)
-RUN curl -L --silent https://github.com/tModLoader/tModLoader/releases/download/v0.11.8.9/tModLoader.Linux.v0.11.8.9.zip \
+## tModLoader Version: v1.4.4 (1.4 version)
+RUN curl -L --silent https://github.com/tModLoader/tModLoader/releases/download/v2023.09.3.3/tModLoader.zip \
     --output tmodloader-server.zip \
-    && echo "tModLoader: v0.11.8.9" | tee -a ${VERSION_FILE} \
+    && echo "tModLoader: v1.4.4" | tee -a ${VERSION_FILE} \
     && unzip -o tmodloader-server.zip -d ${BASE_PATH}/ \
     && rm tmodloader-server.zip \
     && chmod +x ${BASE_PATH}/tModLoaderServer*
